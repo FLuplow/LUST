@@ -34,5 +34,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: /dist/lust
+          publish_dir: ./dist/lust
           cname: xn--real-ittsverlust-1nb.de
