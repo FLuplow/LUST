@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "snowstorm dev",
     "gen-types": "npx openapi-typescript https://vazbvduuzjuqfcesotjp.supabase.co/rest/v1/?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNTEwNTY1MCwiZXhwIjoxOTUwNjgxNjUwfQ.ehIj8ZbzaoooJ9kCjXlMvlJLCSPQldklwhTKclL43Jo --output types/supabase.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "exit 0",
+    "export": "snowstorm export",
+    "start": "snowstorm start"
   },
   "author": "",
   "license": "MIT",
