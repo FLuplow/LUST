@@ -28,7 +28,7 @@ jobs:
       - name: Build Website
         run: |
           pnpm run build
-          pnpm run www:export
+          pnpm run export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
