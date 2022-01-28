@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './index.module.scss'
 import logo from '../assets/lust_large.png'
 import small from '../assets/lust_small.png'
-import crown from '../assets/crown.svg'
+import travolta from '../assets/john_travolta_meme_trans.svg'
 import classNames from 'classnames'
 
 export const Index = () => {
@@ -113,10 +113,7 @@ export const Index = () => {
           <Crown fill={'#1c1c25'} className={styles.crown} />
           <div className={styles.achievements}>
             <h2>Achievements</h2>
-            <img
-              src="https://cdn.discordapp.com/attachments/936348727440986172/936422436407218206/john_travolta_meme_trans.gif"
-              alt="travolta"
-            />
+            <img src={travolta} alt="travolta" />
           </div>
         </div>
       </div>
