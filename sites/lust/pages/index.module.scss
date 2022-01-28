@@ -4,74 +4,70 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-  button {
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.3s;
-    transition-property: all;
-
-    box-shadow: 2px 4px 9px #1694cb4a, 0 0 2rem 4px #00000012;
-    color: #fff;
-    padding: 0.8rem 1.4rem;
-    border: none;
-    background: linear-gradient(166deg, #1d99c4, #22a488);
-    margin-right: 1rem;
-    cursor: pointer;
-    border-radius: 0.5rem;
-
-    &:hover {
-      transform: translateY(-1px);
-      box-shadow: 2px 4px 9px #117caa8c, 0 0 2rem 4px #00000057;
-    }
-  }
 }
 
-.hero {
-  padding: 1rem;
-
-  @media screen and (max-width: 40rem) {
-    width: 100%;
-  }
-
-  h1 {
+.titleWrapper {
+  display: flex;
+  align-items: flex-start;
+  .title {
     font-size: 8rem;
-    line-height: 1;
-    background: -webkit-linear-gradient(#ffffff, #c6dcff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    @media screen and (max-width: 40rem) {
-      font-size: 18vw;
+    font-weight: 500;
+    .first {
+      color: #004996;
+    }
+    .second {
+      color: #fcbf00;
     }
   }
-
-  h2 {
-    font-size: 2rem;
-    @media screen and (max-width: 40rem) {
-      font-size: 6vw;
-    }
-    margin-bottom: 1rem;
-
-    background: -webkit-linear-gradient(#16e9cc, #1a7d83);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    > div {
-      -webkit-text-fill-color: white;
+  .logo {
+    height: 10rem;
+  }
+}
+.slogan {
+  font-size: 2rem;
+}
+.nav {
+  position: fixed;
+  left: 0;
+  top: 50vh;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  background: #3c3c45;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.2s;
+  .item {
+    height: 2.5rem;
+    filter: grayscale(100%);
+  }
+  .item {
+    &:hover {
+      filter: grayscale(25%);
     }
   }
 }
-
-.actions {
-  button {
-    opacity: 0.6;
-
-    &:first-of-type {
-      opacity: 0.9;
-    }
-
-    &:hover {
-      opacity: 1;
-    }
+.section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &:nth-child(2) {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.pxhere.com%2Fphoto%2Flandscape-nature-wilderness-mountain-cloud-fog-sunrise-sunset-mist-sunlight-morning-hill-dawn-valley-mountain-range-dusk-evening-autumn-weather-cool-image-plateau-canon6d-scotland-i-loch-sunbeams-morningmist-ef70200mmf28lisiiusm-trossachs-lochdrunkie-sunbeam-atmospheric-phenomenon-mountainous-landforms-521151.jpg&f=1&nofb=1);
+    background-size: cover;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
+  &:nth-child(4) {
+    background: #2c2c35;
+  }
+}
+.card {
+  max-width: 70%;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: #2c2c39;
+  border-radius: 10px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
 }
