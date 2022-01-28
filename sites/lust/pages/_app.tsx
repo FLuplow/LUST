@@ -7,10 +7,10 @@ import { SupabaseContext } from '../hooks/supabase'
 const queryClient = new QueryClient()
 
 const App = ({ children }: SnowstormCustomAppProps) => (
-  <Layout>
-    <QueryClientProvider client={queryClient}>
-      <SupabaseContext>{children}</SupabaseContext>
-    </QueryClientProvider>
-  </Layout>
+  <QueryClientProvider client={queryClient}>
+    <SupabaseContext>
+      <Layout>{children}</Layout>
+    </SupabaseContext>
+  </QueryClientProvider>
 )
 export default App

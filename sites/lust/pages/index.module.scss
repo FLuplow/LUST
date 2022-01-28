@@ -37,9 +37,13 @@
   background: #3c3c45;
   border-radius: 0 10px 10px 0;
   transition: all 0.2s;
+  z-index: 10;
   .item {
     height: 2.5rem;
     filter: grayscale(100%);
+    &.active {
+      filter: grayscale(0%);
+    }
   }
   .item {
     &:hover {
@@ -55,12 +59,24 @@
   align-items: center;
   flex-direction: column;
   &:nth-child(2) {
-    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.pxhere.com%2Fphoto%2Flandscape-nature-wilderness-mountain-cloud-fog-sunrise-sunset-mist-sunlight-morning-hill-dawn-valley-mountain-range-dusk-evening-autumn-weather-cool-image-plateau-canon6d-scotland-i-loch-sunbeams-morningmist-ef70200mmf28lisiiusm-trossachs-lochdrunkie-sunbeam-atmospheric-phenomenon-mountainous-landforms-521151.jpg&f=1&nofb=1);
+    background-image: url(../assets/background.jpg);
     background-size: cover;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.25);
   }
   &:nth-child(4) {
     background: #2c2c35;
+    position: relative;
+    .achievements {
+      z-index: 2;
+    }
+    .crown {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      height: 80%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 .card {
