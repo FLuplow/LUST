@@ -112,8 +112,10 @@ export const Index = () => {
         <div className={styles.section} id="achievements">
           <Crown fill={'#1c1c25'} className={styles.crown} />
           <div className={styles.achievements}>
-            <h2>Achievements</h2>
-            <img src={travolta} alt="travolta" />
+            <h2 className={styles.sectionHeader}>Achievements</h2>
+            <div className={styles.imgWrapper}>
+              <img src={travolta} alt="travolta" />
+            </div>
           </div>
         </div>
       </div>
