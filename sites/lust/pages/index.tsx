@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from './index.module.scss'
 import logo from '../assets/lust_large.png'
 import small from '../assets/lust_small.png'
-import travolta from '../assets/john_travolta_meme_trans.svg'
+import travolta from '../assets/travolta.gif'
 import classNames from 'classnames'
 
 export const Index = () => {
