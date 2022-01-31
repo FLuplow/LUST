@@ -14,7 +14,11 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@emotion/react": "^11.7.1",
+    "@emotion/styled": "^11.6.0",
     "@explodingcamera/eslint-config": "^21.0.0-1",
+    "@mui/icons-material": "^5.3.1",
+    "@mui/material": "^5.3.1",
     "@snowstorm/cli": "0.8.0",
     "@snowstorm/core": "0.8.0",
     "@supabase/supabase-js": "^1.29.3",

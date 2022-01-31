@@ -1,9 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import styles from './index.module.scss'
 import logo from '../assets/lust_large.png'
-import small from '../assets/lust_small.png'
 import travolta from '../assets/travolta.gif'
 import classNames from 'classnames'
+import {
+  EmojiEventsRounded,
+  AutoStoriesRounded,
+  EmojiObjectsRounded,
+  HomeRounded,
+} from '@mui/icons-material'
 
 export const Index = () => {
   const [activeNav, setActiveNav] = useState(0)
@@ -22,40 +27,57 @@ export const Index = () => {
     <div>
       <div className={styles.nav}>
         <a href="#">
-          <img
-            src={small}
-            alt=""
-            className={classNames(styles.item, {
-              [styles.active]: activeNav === 0,
-            })}
-          />
+          <div className={styles.item}>
+            <HomeRounded
+              fontSize="inherit"
+              className={classNames(styles.icon, {
+                [styles.active]: activeNav === 0,
+              })}
+              color={activeNav === 0 ? 'success' : 'secondary'}
+            />
+            <div className={styles.label}>
+              <span>Home</span>
+            </div>
+          </div>
         </a>
         <a href="#values">
-          <img
-            src={small}
-            alt=""
-            className={classNames(styles.item, {
-              [styles.active]: activeNav === 1,
-            })}
-          />
+          <div className={styles.item}>
+            <EmojiObjectsRounded
+              fontSize="inherit"
+              className={classNames(styles.icon, {
+                [styles.active]: activeNav === 1,
+              })}
+            />
+            <div className={styles.label}>
+              <span>Werte</span>
+            </div>
+          </div>
         </a>
         <a href="#story">
-          <img
-            src={small}
-            alt=""
-            className={classNames(styles.item, {
-              [styles.active]: activeNav === 2,
-            })}
-          />
+          <div className={styles.item}>
+            <AutoStoriesRounded
+              fontSize="inherit"
+              className={classNames(styles.icon, {
+                [styles.active]: activeNav === 2,
+              })}
+            />
+            <div className={styles.label}>
+              <span>Story</span>
+            </div>
+          </div>
         </a>
         <a href="#achievements">
-          <img
-            src={small}
-            alt=""
-            className={classNames(styles.item, {
-              [styles.active]: activeNav === 3,
-            })}
-          />
+          <div className={styles.item}>
+            <EmojiEventsRounded
+              fontSize="inherit"
+              className={classNames(styles.icon, {
+                [styles.active]: activeNav === 3,
+              })}
+            />
+            <div className={styles.label}>
+              <span>Erfolge</span>
+            </div>
+          </div>
         </a>
       </div>
       <div className={styles.landingpage}>
@@ -112,7 +134,7 @@ export const Index = () => {
         <div className={styles.section} id="achievements">
           <Crown fill={'#1c1c25'} className={styles.crown} />
           <div className={styles.achievements}>
-            <h2 className={styles.sectionHeader}>Achievements</h2>
+            <h2 className={styles.sectionHeader}>Erfolge</h2>
             <div className={styles.imgWrapper}>
               <img src={travolta} alt="travolta" />
             </div>
